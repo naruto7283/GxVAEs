@@ -61,7 +61,7 @@ $ source activate gxvaes_env
   @inproceedings{li2024gxvaes,
   title={GxVAEs： Two Joint VAEs Generate Hit Molecules from Gene Expression Profiles},
   author={Li, Chen and Yamanishi, Yoshihiro},
-  booktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2023). AAAI Press},
+  booktitle={Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024)},
   year={2024}
 }
   ```
