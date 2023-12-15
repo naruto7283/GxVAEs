@@ -11,7 +11,7 @@ Execute the following command:
 $ conda env create -n gxvae_env -f gxvaes_env.yml
 $ source activate gxvaes_env
 ```
-Next, unzip the **mcf7.zip** under the path "datasets/LINCS/"
+Next, download the [dataset](https://drive.google.com/drive/folders/1Bj5CLupoLLCubVx4L7H2yYn62BeAkHYC?usp=sharing) and unzip **datasets.zip** under the path "datasets/LINCS/"
 
 ## File Description
 
