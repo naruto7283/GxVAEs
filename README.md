@@ -19,19 +19,19 @@ Next, download the [dataset](https://drive.google.com/drive/folders/1Bj5CLupoLLC
     - LINCS/mcf7.csv: The training and validation dataset
     - tools floder
 - **main.py:**: Defines the main function for training the ProfileVAE and MolVAE models.
-- **GeneVAE.py**: Defines a VAE model for extracting gene expression profile features.
-- **train_gene_vae.py**: Code for training the GeneVAE model.
-- **SmilesVAE.py**: Defines a VAE model for generating SMILES strings with extracted gene features.
+- **GeneVAE.py**: Defines the ProfileVAE model for extracting gene expression profile features.
+- **train_gene_vae.py**: Code for training the ProfileVAE model.
+- **SmilesVAE.py**: Defines the MolVAE model for generating SMILES strings with extracted gene features.
 - **train_smiles_vae.py**: Code for training the MolVAE model.
 - **utils.py**: Defines the functions used.
 
 ## Experimental Reproduction
 
-  - **STEP 1**: Pretrain GeneVAE:
+  - **STEP 1**: Pretrain ProfileVAE:
   ``` 
   $ python main.py --train_gene_vae
   ```
-  - **STEP 2**: Test the trained GeneVAE:
+  - **STEP 2**: Test the trained ProfileVAE:
   ```
   $ python main.py --test_gene_vae
   ```
@@ -43,7 +43,7 @@ Next, download the [dataset](https://drive.google.com/drive/folders/1Bj5CLupoLLC
   ```
   $ python main.py --test_smiles_vae
   ```
-  - **STEP 5**: Generate molecules for the 10 ligands
+  - **STEP 5**: Generate molecules for the 10 ligands using GxVAEs
   ```
   $ python main.py --generation
   ```	
