@@ -3,7 +3,7 @@
 A PyTorch implementation of “GxVAEs： Two Joint VAEs Generate Hit Molecules from Gene Expression Profiles“.
 The paper has been accepted by [AAAI 2024](https://aaai.org/wp-content/uploads/2023/12/Main-Track.pdf). 
 
-![Overview of GxVAEs](https://github.com/naruto7283/GxVAEs/blob/main/overview.jpg)
+![Overview of GxVAEs](https://github.com/naruto7283/GxVAEs/blob/main/overview.png)
 
 ## Environment Installation
 Execute the following command:
