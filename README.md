@@ -19,9 +19,9 @@ Next, download the [dataset](https://drive.google.com/drive/folders/1Bj5CLupoLLC
     - LINCS/mcf7.csv: The training and validation dataset
     - tools floder
 - **main.py:**: Defines the main function for training the ProfileVAE and MolVAE models.
-- **GeneVAE.py**: Defines the ProfileVAE model for extracting gene expression profile features.
+- **ProfileVAE.py**: Defines the ProfileVAE model for extracting gene expression profile features.
 - **train_gene_vae.py**: Code for training the ProfileVAE model.
-- **SmilesVAE.py**: Defines the MolVAE model for generating SMILES strings with extracted gene features.
+- **MolVAE.py**: Defines the MolVAE model for generating SMILES strings with extracted gene features.
 - **train_smiles_vae.py**: Code for training the MolVAE model.
 - **utils.py**: Defines the functions used.
 
