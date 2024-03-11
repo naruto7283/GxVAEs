@@ -49,7 +49,7 @@ Next, download the [dataset](https://drive.google.com/drive/folders/1Bj5CLupoLLC
   ```	
   - **STEP 6**: Calculate Tanimoto similarity between a source ligand and generated SMILES strings: 
   ```
-  $ python main.py --calculate_tanimoto --protein_name XXX***
+  $ python main.py --calculate_tanimoto --protein_name ***
   ```
   
 ## Citation
