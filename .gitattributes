@@ -1,3 +1,4 @@
 .zip filter=lfs diff=lfs merge=lfs -text
 mcf7.zip filter=lfs diff=lfs merge=lfs -text
 mcf7.csv filter=lfs diff=lfs merge=lfs -text
+datasets/LINCS/mcf7.csv filter=lfs diff=lfs merge=lfs -text
