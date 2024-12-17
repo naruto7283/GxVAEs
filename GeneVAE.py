@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from utils import kld_loss, get_device
 
 # ============================================================================
-# Create a VAE encoder
+# Create a VAE encoder (ProfileVAE)
 class GeneEncoder(nn.Module):
 
     def __init__(
@@ -64,7 +64,7 @@ class GeneEncoder(nn.Module):
         return (mu, logvar)
 
 # ============================================================================
-# Create a VAE decoder
+# Create a VAE decoder (ProfileVAE)
 class GeneDecoder(nn.Module):
 
     def __init__(
