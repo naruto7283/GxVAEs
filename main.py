@@ -142,7 +142,7 @@ def main(args):
         ).to(get_device())
 
     # ========================================================= #
-    #                5. Generation                              #
+    #           4. GxVAEs Generation                            #
     # ========================================================= #
     if args.generation:
         # Print other hyperparameter information
@@ -211,7 +211,7 @@ def main(args):
         test_data.to_csv(args.gen_path + 'res-{}.csv'.format(args.protein_name), index=False)
 
     # ========================================================= #
-    #                6. Tanimoto                                #
+    #              5. Tanimoto Calculation                      #
     # ========================================================= #
     if args.calculate_tanimoto:     
         # Read training data
@@ -252,7 +252,7 @@ def main(args):
             for i in range(len(gen_data['SMILES'])):
                 m1= Chem.MolFromSmiles(gen_data['SMILES'][i])
                 if m1:
-                    valid_smiles.append(gen_data['SMILES'][i])
+                    valid_smiles.append(Chem.MolToSmiles(m1))
                     try:
                         fp1 = AllChem.GetMorganFingerprintAsBitVect(m1, 2, nBits=2048)
                     except Exception:
