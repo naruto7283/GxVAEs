@@ -79,7 +79,7 @@ def load_test_gene_data(args):
     return test_loader
 
 # ============================================================================
-# Train GeneVAE
+# Train GeneVAE (ProfileVAE)
 def train_gene_vae(args):
   
     # Load gene dataset
