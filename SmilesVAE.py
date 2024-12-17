@@ -150,7 +150,7 @@ class Smiles_DataLoader(DataLoader):
         return train_dataloader, test_dataloader
 
 # ============================================================================
-# Define EncoderRNN: encode a batch of SMILES to Z
+# Define EncoderRNN: encode a batch of SMILES to Z (MolVAE)
 class EncoderRNN(nn.Module):
     
     def __init__(
@@ -225,7 +225,7 @@ class EncoderRNN(nn.Module):
         return mu, logvar
 
 #=============================================
-#  Define DecoderRNN: decode Z to SMILES
+#  Define DecoderRNN: decode Z to SMILES (MolVAE)
 class DecoderRNN(nn.Module):
     
     def __init__(
@@ -330,7 +330,7 @@ class DecoderRNN(nn.Module):
         return output, hidden
 
 #=============================================
-# Define SmilesVAE
+# Define SmilesVAE (MolVAE)
 class SmilesVAE(nn.Module):
     
     def __init__(self, encoder, decoder):
