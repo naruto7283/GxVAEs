@@ -109,7 +109,7 @@ def train_smiles_vae(
             trained_gene_vae.eval()
             gene_latent_vectors, _ = trained_gene_vae(genes) # [batch_size, gene_latent_size]
 
-            # Apply SmilesVAE
+            # Apply SmilesVAE (MolVAE)
             z, decoded = smiles_vae(smiles, gene_latent_vectors, args.temperature)
             alphas = torch.cat([
                 torch.linspace(0.99, 0.5, int(args.smiles_epochs/2)), 
