@@ -92,7 +92,7 @@ def show_other_hyperparamaters(args):
     print('='*50)
 
 # ============================================================================
-# Build vocabulary for SMILES data 
+# Build vocabulary for SMILES string data 
 class Tokenizer():
 
     def __init__(self):
